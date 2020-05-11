@@ -9,7 +9,7 @@ import os
 Username = ""
 Password = ""
 
-driver = webdriver.Chrome(executable_path = "/Users/sachiniyer/docs/coding/Python/env/projects/web_automation/chromedriver")
+driver = webdriver.Chrome()
 driver.get('https://sameday.costco.com/')
 
 zip_code = driver.find_element_by_id('signup-zipcode')
