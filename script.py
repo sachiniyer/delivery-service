@@ -5,9 +5,13 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import os
+import sys
 
-Username = ""
-Password = ""
+if len(sys.argv) != 3:
+  raise Exception("need 2 arguments")
+
+Username = sys.argv[1]
+Password = sys.argv[2]
 
 driver = webdriver.Chrome()
 driver.get('https://sameday.costco.com/')
