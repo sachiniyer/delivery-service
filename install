@@ -6,4 +6,6 @@ sudo apt-get -y install git
 
 sudo pip3 install selenium
 
-python3 script.py
+touch output.txt
+
+python3 script.py >> output.txt
