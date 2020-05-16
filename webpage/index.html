@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Delivery Availability</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>
+      When are deliveries available
+    </h1>
+    <p>
+      This tool is meant to notify you when there is a costco delivery available in your area
+    </p>
+    <form id="contact-form" method="POST">
+      <label for="email">What is your email</label><br/>
+      <input name="email" type="email" id="email-input" placeholder="foo@bar.com" /><br/>
+      <label for="pass">What is your password</label><br/>
+      <input name="pass" type="text" id="password-input" placeholder="foobar" /><br/>
+      <label for="number">What is your number</label><br/>
+      <input name="number" type="text" id="number-input" placeholder="1 (888) 888-8888"/><br/>
+      <button type="button" onClick="submitToAPI(event)">Submit</button>
+    </form>
+  </body>
+</html>
