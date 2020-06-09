@@ -27,11 +27,13 @@ driver.get('https://sameday.costco.com/')
 # Enter zip code
 zip_code = driver.find_element_by_id('signup-zipcode')
 zip_code.send_keys('95125')
-
+driver.implicitly_wait(15)
+time.sleep(20)
 # Submit button
 continue_box = driver.find_element_by_class_name('rcp-form-submit-button')
-driver.implicitly_wait(2)
+driver.implicitly_wait(15)
 continue_box.click()
+
 
 # Enter email
 driver.implicitly_wait(2)
@@ -56,7 +58,7 @@ button.click()
 driver.implicitly_wait(5)
 button = driver.find_element_by_xpath("//*[@id='react-tabs-2']")
 button.click()
-
+time = 'test'
 driver.implicitly_wait(5)
 try:
   value = driver.find_element_by_xpath("//*[@id='react-tabs-1']/div/div/div/div/div/div/h1")
